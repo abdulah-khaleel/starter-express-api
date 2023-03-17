@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build:ui": "rm -rf build && cd ../part2-notes/ && npm run build && cp -r build ../starter-express-api",
+    "deploy": "git add . && git commit -m '[add] new build' && git push -u origin main",
     "start": "node index.js",
     "dev": "nodemon index.js"
   },
